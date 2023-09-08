@@ -27,7 +27,6 @@ function Katt()
         data.push(obj)
     }
     console.log(data)
-    n=0
     for(var i=0;i<data.length;i++)
     {
         if(data[i].nem=="ferfi")
@@ -41,11 +40,11 @@ function Katt()
             noeletkor+=data[i].eletkor
         }
     }
-    ferfiat
-    ferfiak.push(n)
-    nok.push(data.length-n)
-    ferfiak.push(ferfieletkor/n)
-    nok.push(noeletkor/data.length-n)
-    console.log(ferfiak)
+
+    ferfiatlag=ferfieletkor/ferfiszam
+    noatlag=noeletkor/noszam
+
+    document.getElementById("kiir").innerHTML="<p>Férfiak száma: "+ferfiszam+", Átlag életkor: "+ferfiatlag+"</p>"
+    document.getElementById("kiir").innerHTML+="<p>Nők száma: "+noszam+", Átlag életkor: "+noatlag+"</p>"
 
 }
