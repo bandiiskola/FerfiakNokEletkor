@@ -1,14 +1,16 @@
 var data=[]
 var n=""
-var ferfiszam=0
-var noszam=0
-var ferfiatlag=0
-var noatlag=0
-var ferfieletkor=0
-var noeletkor=0
+
 
 function Katt()
 {
+    var ferfiszam=0
+    var noszam=0
+    var ferfiatlag=0
+    var noatlag=0
+    var ferfieletkor=0
+    var noeletkor=0
+
     n=""
     if(document.getElementById("ferfi").checked)
     {
@@ -41,7 +43,9 @@ function Katt()
         }
     }
 
+    if(ferfiszam!=0)
     ferfiatlag=ferfieletkor/ferfiszam
+    if(noszam!=0)
     noatlag=noeletkor/noszam
 
     document.getElementById("kiir").innerHTML="<p>Férfiak száma: "+ferfiszam+", Átlag életkor: "+ferfiatlag+"</p>"
